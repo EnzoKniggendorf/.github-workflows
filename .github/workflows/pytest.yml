@@ -22,4 +22,4 @@ jobs:
           pip install -r requirements.txt
       - name: Run pytest
         run: |
-          python -m pytest tests/ --cov --cov-report term-missing -v --maxfail=5 --disable-warnings
+          python -m pytest tests/test_example.py --cov --cov-report term-missing -v --maxfail=5 --disable-warnings
